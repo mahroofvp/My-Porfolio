@@ -14,7 +14,7 @@ import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
-  console.log("email",email);
+  
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 

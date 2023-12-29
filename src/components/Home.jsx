@@ -4,9 +4,9 @@ import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
-    <div name='home' className='w-full h-auto min-h-screen bg-[#0a192f]  '>
+    <div name='home' className='w-full h-auto min-h-screen bg-[#0a192f] flex items-center '>
       {/* Container */}
-      <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full mt-20'>
+      <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center  h-full '>
         <p className='text-pink-700 font-bold'>Hi, my name is</p>
         <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>
           MAHROOF VP
