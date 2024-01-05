@@ -9,7 +9,7 @@ import { Link } from 'react-scroll';
  const email = 'mahroofvp77@gmail.com';
  const githubUrl = 'https://github.com/mahroofvp/';
  const linkedinUrl = 'https://www.linkedin.com/in/mahroof-vp-282b2b242';
- const resumeUrl = '/path/to/your/resume.pdf';
+ const resumeUrl = 'https://drive.google.com/file/d/1qmOepN4Q2gEt7TlVyQhVSjfR7tt-tjoU/view?usp=drivesdk';
 
 
 
