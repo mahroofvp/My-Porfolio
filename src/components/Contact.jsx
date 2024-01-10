@@ -17,9 +17,17 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-if(e.target.value){
+   if("e",e.target[0].value || "e",e.target[1].value || "e",e.target[2].value === ""){
+    toast("Please fill the form completely!👀", {
+      style:{
+      color: "red",
+      }
+    })
+    return
+   }
   emailjs.sendForm('service_yek3yrn', 'template_22pyigz', form.current, 'H4Mc4ZCJqnNf1wBPh')
   .then((result) => {
+   
     toast.success("Message was sent successfully")
     e.target.reset()
       console.log(result.text);
@@ -27,13 +35,8 @@ if(e.target.value){
     toast.error("Something went wrong!!")
     console.log(error.text);
   });
-}
-toast("Please fill the form completely!👀", {
-  style:{
-  color: "red",
-  
-  }
-})
+
+
 
     
   };
