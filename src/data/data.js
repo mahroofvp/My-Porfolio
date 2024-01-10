@@ -1,7 +1,6 @@
-import WorkIm from '../assets/projects/workImg.jpeg'
-import RealEst from '../assets/projects/realestate.jpg'
 import ShoeStore from '../assets/projects/ShoeStore.png'
 import MovieGram from '../assets/projects/MovieGram.png'
+import RedLine from '../assets/projects/RedLine.png'
 
 
 export const data=[
@@ -21,19 +20,11 @@ export const data=[
     },
     {
         id:3,
-        name:"React JS Application",
-        image:WorkIm,
-        github:"",
-        live:"",
+        name:"Red Line",
+        image:RedLine,
+        github:"https://github.com/mahroofvp/Redline-cylcles",
+        live:"https://redline-cylcles.vercel.app/",
     },
-    {
-        id:4,
-        name:"React JS Application",
-        image:RealEst,
-        github:"",
-        live:"",
-    },
-
-
+   
 
 ]
