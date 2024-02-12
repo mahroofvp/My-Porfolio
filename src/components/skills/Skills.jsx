@@ -1,15 +1,5 @@
 import React from 'react';
-
-import HTML from '../../assets/html.png';
-import CSS from '../../assets/css.png';
-import JavaScript from '../../assets/javascript.png';
-import ReactImg from '../../assets/react.png';
-import Node from '../../assets/node.png';
-import BOOTSTRAP from '../../assets/bootstrap.png.png';
-import GitHub from '../../assets/github.png';
-import Tailwind from '../../assets/tailwind.png';
-import Mongo from '../../assets/mongo.png';
-import Redux from '../../assets/redux-icon.png';
+import { SkillsData } from '../../data/skillsData';
 import SingleSkill from './SingleSkill';
 const Skills = () => {
   return (
@@ -22,16 +12,12 @@ const Skills = () => {
           </div>
 
           <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-<SingleSkill Image={HTML} Title={"HTML"}/>
-<SingleSkill Image={CSS} Title={"CSS"}/>
-<SingleSkill Image={JavaScript} Title={"JAVASCRIPT"}/>
-<SingleSkill Image={ReactImg} Title={"REACTJS"}/>
-<SingleSkill Image={GitHub} Title={"GITHUB"}/>
-<SingleSkill Image={Node} Title={"NODE JS"}/>
-<SingleSkill Image={Mongo} Title={"MONGO DB"}/>
-<SingleSkill Image={Redux} Title={"REDUX"}/>
-<SingleSkill Image={Tailwind} Title={"TAILWIND CSS"}/>
-<SingleSkill Image={BOOTSTRAP} Title={"BOOTSTRAP"}/>
+
+            {SkillsData.map((item)=>(
+
+<SingleSkill key={item.id} Image={item.img} Title={item.title}/>
+            ))}
+
               
           </div>
       </div>

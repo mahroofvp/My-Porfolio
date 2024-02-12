@@ -1,6 +1,7 @@
 import ShoeStore from '../assets/projects/ShoeStore.png'
 import MovieGram from '../assets/projects/MovieGram.png'
 import RedLine from '../assets/projects/RedLine.png'
+import AIimg from '../assets/projects/AI-website.png'
 
 
 export const data=[
@@ -24,6 +25,13 @@ export const data=[
         image:RedLine,
         github:"https://github.com/mahroofvp/Redline-cylcles",
         live:"https://redline-cylcles.vercel.app/",
+    },
+    {
+        id:4,
+        name:"AI WebPage",
+        image:AIimg,
+        github:"https://github.com/mahroofvp/Ai-webpage",
+        live:"https://ai-webpage.vercel.app/",
     },
    
 
