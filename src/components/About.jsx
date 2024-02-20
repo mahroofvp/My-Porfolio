@@ -1,25 +1,40 @@
 import React from 'react';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import { Link } from 'react-scroll'
+import  MyPic from '../assets/My-pic.png'
 
 const About = () => {
   return (
-    <div name='about' className='w-full h-auto min-h-screen bg-[#0a192f]  text-gray-300 flex items-center '>
-      <div className='flex flex-col justify-center items-center w-full h-full'>
-        <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
-          <div className='sm:text-right pb-8 pl-4'>
-            <p className='text-4xl font-bold inline border-b-4 border-pink-700'>
-              About
-            </p>
-          </div>
-          <div></div>
-          </div>
-          <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-            <div className='sm:text-right text-4xl font-bold'>
-              <p>Hi. I'm Mahroof VP, Please take a look around.</p>
-            </div>
-            <div>
-              <p>I am a passionate MERN stack developer. From individuals to large enterprises, I specialize in delivering top-notch solutions. Let's turn your ideas into reality – I'm here to make it happen. Explore my portfolio and let's connect for exciting projects!</p>  
-            </div>
-          </div>
+    <div name='about' className='w-full h-auto min-h-screen bg-[#0a192f] flex  items-center '>
+      {/* Container */}
+      <div className='max-w-[1000px] mx-auto px-8 flex flex-col-reverse justify-center  h-full md:flex-row mt-24'>
+       <div >
+       <p className='text-pink-700 font-bold'>Hi, my name is</p>
+        <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>
+          MAHROOF VP
+        </h1>
+        <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0]'>
+          I'm a Full Stack Developer.
+        </h2>
+        <p className='text-[#8892b0] py-4 max-w-[700px]'>
+         
+         I'm a full-stack developer, skilled in various programming languages and tools. I specialize in creating MERN stack applications,
+          handling both the front-end and back-end. I know how to build user-friendly single-page apps that meet modern development needs.
+        </p>
+          <button  className='placeholder-gray-700 text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
+        <Link  to='work' smooth={true} duration={500}>
+            View Work
+          </Link>
+            <span className='group-hover:rotate-90 duration-300'>
+              <HiArrowNarrowRight className='ml-3 ' />
+            </span>
+          </button>
+       </div>
+       <div className=' flex  rounded-full' >
+        <img className=' h-60 w-60 mb-6 rounded- md:rounded-full sm:h-64 sm:w-64 sm:mt-12 md:h-60 md:w-96 md:mt-5 md:ml-6 lg:h-72 lg:w-96' src={MyPic} alt="hlw" />
+       </div>
+        <div> 
+        </div>
       </div>
     </div>
   );
